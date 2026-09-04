@@ -1,49 +1,40 @@
 # 🌐 Network Packet Analyzer
 
-> A Python-based network monitoring and packet analysis tool designed to capture, inspect, filter, and visualize network traffic in real time.
-
----
+A Python-based cybersecurity tool designed to capture, analyze, and monitor network packets in real time. The application provides an interactive dashboard for viewing packet information, identifying network protocols, monitoring traffic statistics, and storing analyzed data for further examination.
 
 ## 📌 Overview
 
-The **Network Packet Analyzer** is an educational cybersecurity project developed using Python and Scapy.
+Network communication consists of packets that carry information between devices. Understanding these packets is an important part of network security and monitoring.
 
-The application captures network packets from the local system and extracts useful information such as source and destination IP addresses, communication protocols, port numbers, packet size, payload size, and timestamps.
+This project provides a simple and practical way to observe network traffic and understand the basic information contained within network packets.
 
-A graphical dashboard provides real-time packet statistics and makes the captured traffic easier to understand.
+The application uses **Scapy** for packet capture and analysis and **Tkinter** to provide a user-friendly graphical interface.
 
-The project was developed as part of **Task 5 of the Prodigy Infotech Cyber Security Internship**.
+## 🎯 Objectives
 
----
+The main objectives of this project are:
 
-## 🎯 Project Objectives
+- Capture network packets in real time
+- Analyze basic packet information
+- Identify commonly used protocols
+- Display source and destination IP addresses
+- Identify source and destination ports
+- Monitor packet and payload sizes
+- Provide real-time packet statistics
+- Filter packets based on protocol
+- Store analyzed packet information in CSV format
+- Provide a simple cybersecurity monitoring interface
 
-The main objectives of this project are to:
+## ✨ Features
 
-- Understand how network packets are captured
-- Analyze basic network traffic information
-- Identify commonly used network protocols
-- Extract IP addresses and port information
-- Monitor packet sizes and payload sizes
-- Store packet information in CSV format
-- Provide protocol-based filtering
-- Display network statistics in real time
-- Build a simple cybersecurity monitoring interface
-
----
-
-## ✨ Key Features
-
-### 📡 Live Packet Capture
-
-Captures network packets from the local system using Scapy.
+### 📡 Real-Time Packet Capture
+Captures network packets from the available network interface using Scapy.
 
 ### 🔍 Packet Analysis
+Extracts useful information from captured packets, including:
 
-Extracts important packet information including:
-
-- Source IP
-- Destination IP
+- Source IP address
+- Destination IP address
 - Protocol
 - Source port
 - Destination port
@@ -51,3 +42,26 @@ Extracts important packet information including:
 - Payload size
 - Timestamp
 
+### 🌐 Protocol Identification
+The analyzer identifies common network protocols such as:
+
+- TCP
+- UDP
+- ICMP
+
+### 📊 Real-Time Statistics
+The dashboard displays packet statistics, including:
+
+- Total packets
+- TCP packets
+- UDP packets
+- ICMP packets
+
+### 🔎 Protocol Filtering
+Captured packets can be filtered by protocol:
+
+```text
+ALL
+TCP
+UDP
+ICMP
